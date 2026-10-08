@@ -2,6 +2,13 @@
 
 Project context and review criteria: see `AGENTS.md`, `PLAN.md`, `docs/WORKFLOW.md`.
 
+## After opening a PR
+
+Codex reviews automatically when a PR is opened (not as a draft). Do not poll for it: bind the
+PR (`ccd_pr` `get_status` / `bind_pr`) and turn on its monitor (`set_monitor` with `auto_fix`);
+the app wakes this session when review comments arrive. If Codex's summary comment never
+appears, post `@codex review` once.
+
 ## Handling a Codex review
 
 When asked to handle the Codex review on a PR:

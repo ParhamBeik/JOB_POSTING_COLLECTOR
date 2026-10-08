@@ -34,6 +34,21 @@ Parham reads the PR, settles open points, merges with a merge commit (never squa
 | Claude Code | Acts on each Codex finding: fixes, or replies with evidence | Fix commits, PR replies |
 | Parham | Settles disagreements, checks the result, merges | PR replies, merge commits |
 
+## Reverse direction: Codex writes, Claude reviews
+
+The same loop works with the roles swapped, for any PR Codex opens on a `codex/...` branch:
+
+```
+Codex opens PR ──▶ GitHub Action runs Claude ──▶ Claude review comments on the PR
+                                                        │
+          Parham comments "@codex address the Claude review" ──▶ Codex fixes or pushes back
+                                                        │
+                                Claude re-reviews the new commits ──▶ Parham merges
+```
+
+Parham's comment is the only manual step, by design: the reviewers never trigger each other,
+so they cannot loop. Codex's rules for this are in `AGENTS.md` ("Handling a Claude review").
+
 The PR thread is the shared record, so every finding and its resolution stays visible.
 The reviewer's instructions are in [`AGENTS.md`](../AGENTS.md) under "Review guidelines", so the
 review criteria are versioned with the code.
