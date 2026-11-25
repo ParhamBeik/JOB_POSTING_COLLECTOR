@@ -4,7 +4,7 @@ Interview take-home: collect the last 7 Tehran calendar days of postings from en
 into SQLite, with an HTTP API and one search page. `PLAN.md` is the design; its requirement table
 maps every sentence of the assignment brief to where it is built and tested.
 
-Code is written by Claude (Claude Code). Codex is the second, independent reviewer.
+The primary coding agent writes the code. The Codex GitHub review is the second, independent reviewer.
 
 ## Review guidelines
 

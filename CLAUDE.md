@@ -1,6 +1,9 @@
 # CLAUDE.md
 
-Project context and review criteria: see `AGENTS.md`, `PLAN.md`, `docs/WORKFLOW.md`.
+Shared rules for every tool live in `AGENTS.md` (imported below). This file holds only the
+Claude Code-specific review procedure. Also see `PLAN.md` and `docs/WORKFLOW.md`.
+
+@AGENTS.md
 
 ## Handling a Codex review
 
