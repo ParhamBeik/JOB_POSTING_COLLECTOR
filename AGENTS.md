@@ -21,3 +21,6 @@ The primary coding agent writes the code. The Codex GitHub review is the second,
 - Re-running collection must not create duplicates; identity is `(source, source_post_id)`.
 - Every new behaviour needs a test that runs without the live website.
 - Flag unnecessary abstractions; the brief rewards a small, readable solution.
+- Flag a PR that changes the search page or an API response without a Before / After table in
+  its description (screenshots for the page, the same request before and after for the API).
+  Screenshots are uploaded through GitHub's web page, never committed to the repo.
